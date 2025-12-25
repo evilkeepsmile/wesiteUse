@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>åœ£è¯å¿«ä¹ ğŸ„</title>
+    <title>Ê¥µ®¿ìÀÖ </title>
     <style>
         * {
             margin: 0;
@@ -22,7 +22,7 @@
             position: relative;
         }
 
-        /* é›ªèŠ±æ•ˆæœ */
+        /* Ñ©»¨Ğ§¹û */
         .snowflake {
             position: absolute;
             top: -10px;
@@ -38,7 +38,7 @@
             }
         }
 
-        /* ä¸»å®¹å™¨ */
+        /* Ö÷ÈİÆ÷ */
         .container {
             text-align: center;
             z-index: 10;
@@ -63,7 +63,7 @@
             }
         }
 
-        /* åœ£è¯æ ‘ */
+        /* Ê¥µ®Ê÷ */
         .tree {
             font-size: 80px;
             margin-bottom: 20px;
@@ -105,7 +105,7 @@
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
-        /* ç¤¼ç‰©ç›’åŠ¨ç”» */
+        /* ÀñÎïºĞ¶¯»­ */
         .gifts {
             display: flex;
             justify-content: center;
@@ -144,7 +144,7 @@
             }
         }
 
-        /* æ˜Ÿæ˜Ÿè£…é¥° */
+        /* ĞÇĞÇ×°ÊÎ */
         .stars {
             position: absolute;
             width: 100%;
@@ -189,7 +189,7 @@
             box-shadow: 0 8px 30px rgba(227, 57, 53, 0.6);
         }
 
-        /* ç¥ç¦å¼¹çª— */
+        /* ×£¸£µ¯´° */
         .blessing-modal {
             position: fixed;
             top: 0;
@@ -306,38 +306,38 @@
 <body>
     <div class="stars" id="stars"></div>
     
-    <!-- ç¥ç¦å¼¹çª— -->
+    <!-- ×£¸£µ¯´° -->
     <div class="blessing-modal" id="blessingModal">
         <div class="blessing-content">
-            <button class="close-btn" onclick="closeModal()">Ã—</button>
-            <div class="blessing-icon" id="blessingIcon">ğŸ</div>
-            <div class="blessing-text" id="blessingText">åœ£è¯å¿«ä¹!</div>
+            <button class="close-btn" onclick="closeModal()">¡Á</button>
+            <div class="blessing-icon" id="blessingIcon"></div>
+            <div class="blessing-text" id="blessingText">Ê¥µ®¿ìÀÖ!</div>
         </div>
     </div>
     
     <div class="container">
-        <div class="tree">ğŸ„</div>
-        <h1>åœ£è¯å¿«ä¹</h1>
+        <div class="tree"></div>
+        <h1>Ê¥µ®¿ìÀÖ</h1>
         <div class="message">
-            æ„¿è¿™ä¸ªåœ£è¯èŠ‚<br>
-            å¸¦ç»™ä½ æ¸©æš–ä¸æ¬¢ä¹<br>
-            æ„¿æ–°çš„ä¸€å¹´<br>
-            æ‰€æœ‰çš„æ¢¦æƒ³éƒ½èƒ½å®ç°âœ¨
+            Ô¸Õâ¸öÊ¥µ®½Ú<br>
+            ´ø¸øÄãÎÂÅ¯Óë»¶ÀÖ<br>
+            Ô¸ĞÂµÄÒ»Äê<br>
+            ËùÓĞµÄÃÎÏë¶¼ÄÜÊµÏÖ
         </div>
         <div class="gifts">
-            <div class="gift" title="å¹³å®‰">ğŸ</div>
-            <div class="gift" title="å–œä¹">ğŸ…</div>
-            <div class="gift" title="ç¥ç¦">â›„</div>
+            <div class="gift" title="Æ½°²"></div>
+            <div class="gift" title="Ï²ÀÖ"></div>
+            <div class="gift" title="×£¸£"></div>
         </div>
-        <button class="button" onclick="showGreeting()">ç‚¹å‡»è·å–ç¥ç¦</button>
+        <button class="button" onclick="showGreeting()">µã»÷»ñÈ¡×£¸£</button>
     </div>
 
     <script>
-        // åˆ›å»ºé›ªèŠ±
+        // ´´½¨Ñ©»¨
         function createSnowflake() {
             const snowflake = document.createElement('div');
             snowflake.classList.add('snowflake');
-            snowflake.innerHTML = 'â„';
+            snowflake.innerHTML = '';
             snowflake.style.left = Math.random() * 100 + '%';
             snowflake.style.animationDuration = Math.random() * 3 + 5 + 's';
             snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
@@ -351,12 +351,12 @@
 
         setInterval(createSnowflake, 200);
 
-        // åˆ›å»ºæ˜Ÿæ˜Ÿ
+        // ´´½¨ĞÇĞÇ
         const starsContainer = document.getElementById('stars');
         for (let i = 0; i < 50; i++) {
             const star = document.createElement('div');
             star.classList.add('star');
-            star.innerHTML = 'â­';
+            star.innerHTML = '';
             star.style.left = Math.random() * 100 + '%';
             star.style.top = Math.random() * 100 + '%';
             star.style.fontSize = Math.random() * 15 + 5 + 'px';
@@ -364,16 +364,16 @@
             starsContainer.appendChild(star);
         }
 
-        // ç¥ç¦è¯­åˆ—è¡¨
+        // ×£¸£ÓïÁĞ±í
         const greetings = [
-            { icon: "ğŸ…", text: "æ„¿åœ£è¯è€äººæŠŠæœ€å¥½çš„ç¤¼ç‰©é€ç»™ä½ ï¼" },
-            { icon: "â­", text: "æ„¿ä½ çš„ç”Ÿæ´»åƒåœ£è¯æ ‘ä¸€æ ·é—ªé—ªå‘å…‰ï¼" },
-            { icon: "ğŸ", text: "æ„¿æ‰€æœ‰ç¾å¥½å¦‚çº¦è€Œè‡³ï¼" },
-            { icon: "â„ï¸", text: "æ„¿å†¬æ—¥æš–é˜³å¸¸ä¼´ä½ å·¦å³ï¼" },
-            { icon: "ğŸ””", text: "æ„¿æ¬¢ä¹çš„é“ƒå£°ä¸ºä½ å¥å“å¹¸ç¦ä¹ç« ï¼" },
-            { icon: "ğŸ„", text: "æ„¿æ–°å¹´å¸¦æ¥æ–°å¸Œæœ›ã€æ–°æ¢¦æƒ³ï¼" },
-            { icon: "âœ¨", text: "æ„¿æ¯ä¸€å¤©éƒ½å……æ»¡æƒŠå–œä¸æ„ŸåŠ¨ï¼" },
-            { icon: "ğŸŒŸ", text: "æ„¿ä½ è¢«è¿™ä¸ªä¸–ç•Œæ¸©æŸ”ä»¥å¾…ï¼" }
+            { icon: "", text: "Ô¸Ê¥µ®ÀÏÈË°Ñ×îºÃµÄÀñÎïËÍ¸øÄã£¡" },
+            { icon: "", text: "Ô¸ÄãµÄÉú»îÏñÊ¥µ®Ê÷Ò»ÑùÉÁÉÁ·¢¹â£¡" },
+            { icon: "", text: "Ô¸ËùÓĞÃÀºÃÈçÔ¼¶øÖÁ£¡" },
+            { icon: "", text: "Ô¸¶¬ÈÕÅ¯Ñô³£°éÄã×óÓÒ£¡" },
+            { icon: "", text: "Ô¸»¶ÀÖµÄÁåÉùÎªÄã×àÏìĞÒ¸£ÀÖÕÂ£¡" },
+            { icon: "", text: "Ô¸ĞÂÄê´øÀ´ĞÂÏ£Íû¡¢ĞÂÃÎÏë£¡" },
+            { icon: "", text: "Ô¸Ã¿Ò»Ìì¶¼³äÂú¾ªÏ²Óë¸Ğ¶¯£¡" },
+            { icon: "", text: "Ô¸Äã±»Õâ¸öÊÀ½çÎÂÈáÒÔ´ı£¡" }
         ];
 
         function showGreeting() {
@@ -394,14 +394,14 @@
             modal.classList.remove('show');
         }
 
-        // ç‚¹å‡»èƒŒæ™¯å…³é—­
+        // µã»÷±³¾°¹Ø±Õ
         document.getElementById('blessingModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeModal();
             }
         });
 
-        // åˆ›å»ºäº”å½©çº¸å±‘
+        // ´´½¨Îå²ÊÖ½Ğ¼
         function createConfetti() {
             const colors = ['#ff6b6b', '#4ecdc4', '#ffe66d', '#a8e6cf', '#ff8b94', '#c7ceea'];
             const modal = document.querySelector('.blessing-content');
@@ -420,7 +420,7 @@
             }
         }
 
-        // ç¤¼ç‰©ç‚¹å‡»æ•ˆæœ
+        // ÀñÎïµã»÷Ğ§¹û
         document.querySelectorAll('.gift').forEach(gift => {
             gift.addEventListener('click', function() {
                 const modal = document.getElementById('blessingModal');
@@ -433,9 +433,9 @@
                 }, 10);
                 
                 const messages = {
-                    'ğŸ': { icon: 'ğŸ', text: 'æ”¶åˆ°äº†å¹³å®‰çš„ç¥ç¦ï¼æ„¿ä½ å¹³å®‰å–œä¹æ¯ä¸€å¤©ï¼' },
-                    'ğŸ…': { icon: 'ğŸ…', text: 'åœ£è¯è€äººé€æ¥äº†å–œä¹ï¼Ho Ho Ho~' },
-                    'â›„': { icon: 'â›„', text: 'é›ªäººå¸¦æ¥äº†æ¸©æš–çš„é—®å€™ï¼è®©æˆ‘ä»¬ä¸€èµ·å †é›ªäººå§ï¼' }
+                    '': { icon: '', text: 'ÊÕµ½ÁËÆ½°²µÄ×£¸££¡Ô¸ÄãÆ½°²Ï²ÀÖÃ¿Ò»Ìì£¡' },
+                    '': { icon: '', text: 'Ê¥µ®ÀÏÈËËÍÀ´ÁËÏ²ÀÖ£¡Ho Ho Ho~' },
+                    '': { icon: '', text: 'Ñ©ÈË´øÀ´ÁËÎÂÅ¯µÄÎÊºò£¡ÈÃÎÒÃÇÒ»Æğ¶ÑÑ©ÈË°É£¡' }
                 };
                 
                 const message = messages[this.innerHTML];
